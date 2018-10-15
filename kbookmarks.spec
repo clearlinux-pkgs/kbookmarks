@@ -5,17 +5,17 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kbookmarks
-Version  : 5.50.0
-Release  : 5
-URL      : https://download.kde.org/stable/frameworks/5.50/kbookmarks-5.50.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.50/kbookmarks-5.50.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.50/kbookmarks-5.50.0.tar.xz.sig
+Version  : 5.51.0
+Release  : 6
+URL      : https://download.kde.org/stable/frameworks/5.51/kbookmarks-5.51.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.51/kbookmarks-5.51.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.51/kbookmarks-5.51.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
-Requires: kbookmarks-lib
-Requires: kbookmarks-license
-Requires: kbookmarks-data
+Requires: kbookmarks-data = %{version}-%{release}
+Requires: kbookmarks-lib = %{version}-%{release}
+Requires: kbookmarks-license = %{version}-%{release}
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
 BuildRequires : kauth-dev
@@ -26,7 +26,7 @@ BuildRequires : kconfigwidgets-dev
 BuildRequires : kcoreaddons-dev
 BuildRequires : kiconthemes-dev
 BuildRequires : kwidgetsaddons-dev
-BuildRequires : qtbase-dev qtbase-extras mesa-dev
+BuildRequires : qtbase-dev mesa-dev
 
 %description
 # KBookmarks
@@ -46,9 +46,9 @@ data components for the kbookmarks package.
 %package dev
 Summary: dev components for the kbookmarks package.
 Group: Development
-Requires: kbookmarks-lib
-Requires: kbookmarks-data
-Provides: kbookmarks-devel
+Requires: kbookmarks-lib = %{version}-%{release}
+Requires: kbookmarks-data = %{version}-%{release}
+Provides: kbookmarks-devel = %{version}-%{release}
 
 %description dev
 dev components for the kbookmarks package.
@@ -57,8 +57,8 @@ dev components for the kbookmarks package.
 %package lib
 Summary: lib components for the kbookmarks package.
 Group: Libraries
-Requires: kbookmarks-data
-Requires: kbookmarks-license
+Requires: kbookmarks-data = %{version}-%{release}
+Requires: kbookmarks-license = %{version}-%{release}
 
 %description lib
 lib components for the kbookmarks package.
@@ -73,25 +73,25 @@ license components for the kbookmarks package.
 
 
 %prep
-%setup -q -n kbookmarks-5.50.0
+%setup -q -n kbookmarks-5.51.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536430534
-mkdir clr-build
+export SOURCE_DATE_EPOCH=1539631625
+mkdir -p clr-build
 pushd clr-build
 %cmake ..
-make  %{?_smp_mflags}
+make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1536430534
+export SOURCE_DATE_EPOCH=1539631625
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/kbookmarks
-cp COPYING.LIB %{buildroot}/usr/share/doc/kbookmarks/COPYING.LIB
+mkdir -p %{buildroot}/usr/share/package-licenses/kbookmarks
+cp COPYING.LIB %{buildroot}/usr/share/package-licenses/kbookmarks/COPYING.LIB
 pushd clr-build
 %make_install
 popd
@@ -229,8 +229,8 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Bookmarks.so.5
-/usr/lib64/libKF5Bookmarks.so.5.50.0
+/usr/lib64/libKF5Bookmarks.so.5.51.0
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/kbookmarks/COPYING.LIB
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/kbookmarks/COPYING.LIB
