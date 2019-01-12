@@ -6,7 +6,7 @@
 #
 Name     : kbookmarks
 Version  : 5.53.0
-Release  : 10
+Release  : 11
 URL      : https://download.kde.org/stable/frameworks/5.53/kbookmarks-5.53.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/5.53/kbookmarks-5.53.0.tar.xz
 Source99 : https://download.kde.org/stable/frameworks/5.53/kbookmarks-5.53.0.tar.xz.sig
