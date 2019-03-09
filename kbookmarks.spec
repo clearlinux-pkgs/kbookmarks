@@ -5,12 +5,12 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kbookmarks
-Version  : 5.55.0
-Release  : 13
-URL      : https://download.kde.org/stable/frameworks/5.55/kbookmarks-5.55.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.55/kbookmarks-5.55.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.55/kbookmarks-5.55.0.tar.xz.sig
-Summary  : No detailed summary available
+Version  : 5.56.0
+Release  : 14
+URL      : https://download.kde.org/stable/frameworks/5.56/kbookmarks-5.56.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.56/kbookmarks-5.56.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.56/kbookmarks-5.56.0.tar.xz.sig
+Summary  : Support for bookmarks and the XBEL format
 Group    : Development/Tools
 License  : LGPL-2.1
 Requires: kbookmarks-data = %{version}-%{release}
@@ -49,6 +49,7 @@ Group: Development
 Requires: kbookmarks-lib = %{version}-%{release}
 Requires: kbookmarks-data = %{version}-%{release}
 Provides: kbookmarks-devel = %{version}-%{release}
+Requires: kbookmarks = %{version}-%{release}
 
 %description dev
 dev components for the kbookmarks package.
@@ -73,22 +74,23 @@ license components for the kbookmarks package.
 
 
 %prep
-%setup -q -n kbookmarks-5.55.0
+%setup -q -n kbookmarks-5.56.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549760103
+export SOURCE_DATE_EPOCH=1552166537
 mkdir -p clr-build
 pushd clr-build
+export LDFLAGS="${LDFLAGS} -fno-lto"
 %cmake ..
-make  %{?_smp_mflags} VERBOSE=1
+make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1549760103
+export SOURCE_DATE_EPOCH=1552166537
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kbookmarks
 cp COPYING.LIB %{buildroot}/usr/share/package-licenses/kbookmarks/COPYING.LIB
@@ -228,7 +230,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Bookmarks.so.5
-/usr/lib64/libKF5Bookmarks.so.5.55.0
+/usr/lib64/libKF5Bookmarks.so.5.56.0
 
 %files license
 %defattr(0644,root,root,0755)
