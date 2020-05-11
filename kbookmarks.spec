@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kbookmarks
-Version  : 5.69.0
-Release  : 30
-URL      : https://download.kde.org/stable/frameworks/5.69/kbookmarks-5.69.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.69/kbookmarks-5.69.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.69/kbookmarks-5.69.0.tar.xz.sig
+Version  : 5.70.0
+Release  : 31
+URL      : https://download.kde.org/stable/frameworks/5.70/kbookmarks-5.70.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.70/kbookmarks-5.70.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.70/kbookmarks-5.70.0.tar.xz.sig
 Summary  : Support for bookmarks and the XBEL format
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -18,6 +18,7 @@ Requires: kbookmarks-lib = %{version}-%{release}
 Requires: kbookmarks-license = %{version}-%{release}
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
+BuildRequires : extra-cmake-modules-data
 BuildRequires : kauth-dev
 BuildRequires : kcodecs-dev
 BuildRequires : kconfig
@@ -26,6 +27,8 @@ BuildRequires : kconfigwidgets-dev
 BuildRequires : kcoreaddons-dev
 BuildRequires : kiconthemes-dev
 BuildRequires : kwidgetsaddons-dev
+BuildRequires : kxmlgui-dev
+BuildRequires : qtbase-dev
 BuildRequires : qtbase-dev mesa-dev
 
 %description
@@ -49,7 +52,6 @@ Group: Development
 Requires: kbookmarks-lib = %{version}-%{release}
 Requires: kbookmarks-data = %{version}-%{release}
 Provides: kbookmarks-devel = %{version}-%{release}
-Requires: kbookmarks = %{version}-%{release}
 Requires: kbookmarks = %{version}-%{release}
 
 %description dev
@@ -75,35 +77,34 @@ license components for the kbookmarks package.
 
 
 %prep
-%setup -q -n kbookmarks-5.69.0
-cd %{_builddir}/kbookmarks-5.69.0
+%setup -q -n kbookmarks-5.70.0
+cd %{_builddir}/kbookmarks-5.70.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1586898302
+export SOURCE_DATE_EPOCH=1589226250
 mkdir -p clr-build
 pushd clr-build
-# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %cmake ..
 make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1586898302
+export SOURCE_DATE_EPOCH=1589226250
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kbookmarks
-cp %{_builddir}/kbookmarks-5.69.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kbookmarks/9a1929f4700d2407c70b507b3b2aaf6226a9543c
+cp %{_builddir}/kbookmarks-5.70.0/COPYING.LIB %{buildroot}/usr/share/package-licenses/kbookmarks/9a1929f4700d2407c70b507b3b2aaf6226a9543c
 pushd clr-build
 %make_install
 popd
@@ -241,7 +242,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Bookmarks.so.5
-/usr/lib64/libKF5Bookmarks.so.5.69.0
+/usr/lib64/libKF5Bookmarks.so.5.70.0
 
 %files license
 %defattr(0644,root,root,0755)
