@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kbookmarks
-Version  : 5.82.0
-Release  : 40
-URL      : https://download.kde.org/stable/frameworks/5.82/kbookmarks-5.82.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.82/kbookmarks-5.82.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.82/kbookmarks-5.82.0.tar.xz.sig
+Version  : 5.83.0
+Release  : 41
+URL      : https://download.kde.org/stable/frameworks/5.83/kbookmarks-5.83.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.83/kbookmarks-5.83.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.83/kbookmarks-5.83.0.tar.xz.sig
 Summary  : Support for bookmarks and the XBEL format
 Group    : Development/Tools
 License  : GPL-2.0 LGPL-2.0 LGPL-3.0
@@ -77,15 +77,15 @@ license components for the kbookmarks package.
 
 
 %prep
-%setup -q -n kbookmarks-5.82.0
-cd %{_builddir}/kbookmarks-5.82.0
+%setup -q -n kbookmarks-5.83.0
+cd %{_builddir}/kbookmarks-5.83.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1623263390
+export SOURCE_DATE_EPOCH=1623646631
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -101,15 +101,15 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1623263390
+export SOURCE_DATE_EPOCH=1623646631
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kbookmarks
-cp %{_builddir}/kbookmarks-5.82.0/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kbookmarks/e712eadfab0d2357c0f50f599ef35ee0d87534cb
-cp %{_builddir}/kbookmarks-5.82.0/LICENSES/LGPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kbookmarks/20079e8f79713dce80ab09774505773c926afa2a
-cp %{_builddir}/kbookmarks-5.82.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kbookmarks/20079e8f79713dce80ab09774505773c926afa2a
-cp %{_builddir}/kbookmarks-5.82.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kbookmarks/757b86330df80f81143d5916b3e92b4bcb1b1890
-cp %{_builddir}/kbookmarks-5.82.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kbookmarks/e458941548e0864907e654fa2e192844ae90fc32
-cp %{_builddir}/kbookmarks-5.82.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kbookmarks/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kbookmarks-5.83.0/LICENSES/GPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kbookmarks/e712eadfab0d2357c0f50f599ef35ee0d87534cb
+cp %{_builddir}/kbookmarks-5.83.0/LICENSES/LGPL-2.0-only.txt %{buildroot}/usr/share/package-licenses/kbookmarks/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/kbookmarks-5.83.0/LICENSES/LGPL-2.0-or-later.txt %{buildroot}/usr/share/package-licenses/kbookmarks/20079e8f79713dce80ab09774505773c926afa2a
+cp %{_builddir}/kbookmarks-5.83.0/LICENSES/LGPL-3.0-only.txt %{buildroot}/usr/share/package-licenses/kbookmarks/757b86330df80f81143d5916b3e92b4bcb1b1890
+cp %{_builddir}/kbookmarks-5.83.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kbookmarks/e458941548e0864907e654fa2e192844ae90fc32
+cp %{_builddir}/kbookmarks-5.83.0/LICENSES/LicenseRef-KDE-Accepted-LGPL.txt %{buildroot}/usr/share/package-licenses/kbookmarks/e458941548e0864907e654fa2e192844ae90fc32
 pushd clr-build
 %make_install
 popd
@@ -249,7 +249,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Bookmarks.so.5
-/usr/lib64/libKF5Bookmarks.so.5.82.0
+/usr/lib64/libKF5Bookmarks.so.5.83.0
 
 %files license
 %defattr(0644,root,root,0755)
