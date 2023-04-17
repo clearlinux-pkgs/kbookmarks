@@ -6,11 +6,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kbookmarks
-Version  : 5.104.0
-Release  : 62
-URL      : https://download.kde.org/stable/frameworks/5.104/kbookmarks-5.104.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.104/kbookmarks-5.104.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.104/kbookmarks-5.104.0.tar.xz.sig
+Version  : 5.105.0
+Release  : 63
+URL      : https://download.kde.org/stable/frameworks/5.105/kbookmarks-5.105.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.105/kbookmarks-5.105.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.105/kbookmarks-5.105.0.tar.xz.sig
 Summary  : Support for bookmarks and the XBEL format
 Group    : Development/Tools
 License  : CC0-1.0 GPL-2.0 LGPL-2.0 LGPL-3.0
@@ -79,15 +79,15 @@ license components for the kbookmarks package.
 
 
 %prep
-%setup -q -n kbookmarks-5.104.0
-cd %{_builddir}/kbookmarks-5.104.0
+%setup -q -n kbookmarks-5.105.0
+cd %{_builddir}/kbookmarks-5.105.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679592797
+export SOURCE_DATE_EPOCH=1681747449
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -103,7 +103,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1679592797
+export SOURCE_DATE_EPOCH=1681747449
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kbookmarks
 cp %{_builddir}/kbookmarks-%{version}/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/kbookmarks/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0 || :
@@ -252,7 +252,7 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Bookmarks.so.5
-/usr/lib64/libKF5Bookmarks.so.5.104.0
+/usr/lib64/libKF5Bookmarks.so.5.105.0
 
 %files license
 %defattr(0644,root,root,0755)
