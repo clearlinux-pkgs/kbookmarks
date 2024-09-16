@@ -1,229 +1,57 @@
-libKF6Bookmarks.so.6:KBookmarkGroup::addBookmark(QString const&, QUrl const&, QString const&)
-libKF6Bookmarks.so.6:KBookmarkGroup::addBookmark(KBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkGroup::moveBookmark(KBookmark const&, KBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkGroup::deleteBookmark(KBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkGroup::createNewFolder(QString const&)
+libKF6Bookmarks.so.6:KBookmark::KBookmark()
+libKF6Bookmarks.so.6:KBookmark::List::List()
+libKF6Bookmarks.so.6:KBookmark::List::mimeDataTypes()
+libKF6Bookmarks.so.6:KBookmark::setShowInToolbar(bool)
+libKF6Bookmarks.so.6:KBookmark::updateAccessMetadata()
+libKF6Bookmarks.so.6:KBookmarkAction::~KBookmarkAction()
+libKF6Bookmarks.so.6:KBookmarkActionInterface::~KBookmarkActionInterface()
+libKF6Bookmarks.so.6:KBookmarkGroup::KBookmarkGroup()
 libKF6Bookmarks.so.6:KBookmarkGroup::createNewSeparator()
-libKF6Bookmarks.so.6:KBookmarkGroup::KBookmarkGroup(QDomElement const&)
-libKF6Bookmarks.so.6:KBookmarkGroup::KBookmarkGroup()
-libKF6Bookmarks.so.6:KBookmarkGroup::KBookmarkGroup(QDomElement const&)
-libKF6Bookmarks.so.6:KBookmarkGroup::KBookmarkGroup()
-libKF6Bookmarks.so.6:KBookmarkOwner::openInNewTab(KBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::FutureBookmark(QString const&, QUrl const&, QString const&)
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::FutureBookmark(KBookmarkOwner::FutureBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::FutureBookmark(QString const&, QUrl const&, QString const&)
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::FutureBookmark(KBookmarkOwner::FutureBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::~FutureBookmark()
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::~FutureBookmark()
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::operator=(KBookmarkOwner::FutureBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkOwner::openInNewWindow(KBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkOwner::openFolderinTabs(KBookmarkGroup const&)
-libKF6Bookmarks.so.6:KBookmarkOwner::KBookmarkOwner()
-libKF6Bookmarks.so.6:KBookmarkOwner::KBookmarkOwner()
-libKF6Bookmarks.so.6:KBookmarkOwner::~KBookmarkOwner()
-libKF6Bookmarks.so.6:KBookmarkOwner::~KBookmarkOwner()
-libKF6Bookmarks.so.6:KBookmarkOwner::~KBookmarkOwner()
-libKF6Bookmarks.so.6:KEditBookmarks::openForFile(QString const&)
-libKF6Bookmarks.so.6:KEditBookmarks::setBrowserMode(bool)
-libKF6Bookmarks.so.6:KEditBookmarks::startKEditBookmarks(QList<QString> const&)
-libKF6Bookmarks.so.6:KEditBookmarks::openForFileAtAddress(QString const&, QString const&)
-libKF6Bookmarks.so.6:KBookmarkAction::qt_metacall(QMetaObject::Call, int, void**)
-libKF6Bookmarks.so.6:KBookmarkAction::qt_metacast(char const*)
-libKF6Bookmarks.so.6:KBookmarkAction::slotSelected(QFlags<Qt::MouseButton>, QFlags<Qt::KeyboardModifier>)
-libKF6Bookmarks.so.6:KBookmarkAction::KBookmarkAction(KBookmark const&, KBookmarkOwner*, QObject*)
-libKF6Bookmarks.so.6:KBookmarkAction::KBookmarkAction(KBookmark const&, KBookmarkOwner*, QObject*)
-libKF6Bookmarks.so.6:KBookmarkAction::~KBookmarkAction()
-libKF6Bookmarks.so.6:KBookmarkAction::~KBookmarkAction()
-libKF6Bookmarks.so.6:KBookmarkAction::~KBookmarkAction()
-libKF6Bookmarks.so.6:KBookmarkManager::emitChanged(KBookmarkGroup const&)
+libKF6Bookmarks.so.6:KBookmarkGroupTraverser::~KBookmarkGroupTraverser()
 libKF6Bookmarks.so.6:KBookmarkManager::emitChanged()
-libKF6Bookmarks.so.6:KBookmarkManager::qt_metacall(QMetaObject::Call, int, void**)
-libKF6Bookmarks.so.6:KBookmarkManager::qt_metacast(char const*)
-libKF6Bookmarks.so.6:KBookmarkManager::findByAddress(QString const&)
-libKF6Bookmarks.so.6:KBookmarkManager::updateAccessMetadata(QString const&)
-libKF6Bookmarks.so.6:KBookmarkManager::error(QString const&)
-libKF6Bookmarks.so.6:KBookmarkManager::changed(QString const&)
 libKF6Bookmarks.so.6:KBookmarkManager::toolbar()
-libKF6Bookmarks.so.6:KBookmarkManager::KBookmarkManager(QString const&, QObject*)
-libKF6Bookmarks.so.6:KBookmarkManager::KBookmarkManager(QString const&, QObject*)
 libKF6Bookmarks.so.6:KBookmarkManager::~KBookmarkManager()
-libKF6Bookmarks.so.6:KBookmarkManager::~KBookmarkManager()
-libKF6Bookmarks.so.6:KBookmarkManager::~KBookmarkManager()
+libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::~FutureBookmark()
+libKF6Bookmarks.so.6:KBookmarkOwner::KBookmarkOwner()
+libKF6Bookmarks.so.6:KBookmarkOwner::~KBookmarkOwner()
 libKF6Bookmarks.so.6:KBookmarkSettings::readSettings()
 libKF6Bookmarks.so.6:KBookmarkSettings::self()
-libKF6Bookmarks.so.6:KBookmarkGroupTraverser::visitEnter(KBookmarkGroup const&)
-libKF6Bookmarks.so.6:KBookmarkGroupTraverser::visitLeave(KBookmarkGroup const&)
-libKF6Bookmarks.so.6:KBookmarkGroupTraverser::visit(KBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkGroupTraverser::traverse(KBookmarkGroup const&)
-libKF6Bookmarks.so.6:KBookmarkGroupTraverser::~KBookmarkGroupTraverser()
-libKF6Bookmarks.so.6:KBookmarkGroupTraverser::~KBookmarkGroupTraverser()
-libKF6Bookmarks.so.6:KBookmarkGroupTraverser::~KBookmarkGroupTraverser()
-libKF6Bookmarks.so.6:KBookmarkActionInterface::KBookmarkActionInterface(KBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkActionInterface::KBookmarkActionInterface(KBookmark const&)
-libKF6Bookmarks.so.6:KBookmarkActionInterface::~KBookmarkActionInterface()
-libKF6Bookmarks.so.6:KBookmarkActionInterface::~KBookmarkActionInterface()
-libKF6Bookmarks.so.6:KBookmarkActionInterface::~KBookmarkActionInterface()
-libKF6Bookmarks.so.6:KBookmark::nextAddress(QString const&)
-libKF6Bookmarks.so.6:KBookmark::setFullText(QString const&)
-libKF6Bookmarks.so.6:KBookmark::setMimeType(QString const&)
-libKF6Bookmarks.so.6:KBookmark::commonParent(QString const&, QString const&)
-libKF6Bookmarks.so.6:KBookmark::parentAddress(QString const&)
-libKF6Bookmarks.so.6:KBookmark::setDescription(QString const&)
-libKF6Bookmarks.so.6:KBookmark::previousAddress(QString const&)
-libKF6Bookmarks.so.6:KBookmark::setMetaDataItem(QString const&, QString const&, KBookmark::MetaDataOverwriteMode)
-libKF6Bookmarks.so.6:KBookmark::positionInParent(QString const&)
-libKF6Bookmarks.so.6:KBookmark::setShowInToolbar(bool)
-libKF6Bookmarks.so.6:KBookmark::standaloneBookmark(QString const&, QUrl const&, QString const&)
-libKF6Bookmarks.so.6:KBookmark::updateAccessMetadata()
-libKF6Bookmarks.so.6:KBookmark::List::fromMimeData(QMimeData const*, QDomDocument&)
-libKF6Bookmarks.so.6:KBookmark::List::mimeDataTypes()
-libKF6Bookmarks.so.6:KBookmark::List::canDecode(QMimeData const*)
-libKF6Bookmarks.so.6:KBookmark::List::List()
-libKF6Bookmarks.so.6:KBookmark::List::List()
-libKF6Bookmarks.so.6:KBookmark::setUrl(QUrl const&)
-libKF6Bookmarks.so.6:KBookmark::setIcon(QString const&)
-libKF6Bookmarks.so.6:KBookmark::KBookmark(QDomElement const&)
-libKF6Bookmarks.so.6:KBookmark::KBookmark()
-libKF6Bookmarks.so.6:KBookmark::KBookmark(QDomElement const&)
-libKF6Bookmarks.so.6:KBookmark::KBookmark()
-libKF6Bookmarks.so.6:KBookmarkGroup::findToolbar() const
-libKF6Bookmarks.so.6:KBookmarkGroup::groupUrlList() const
-libKF6Bookmarks.so.6:KBookmarkGroup::nextKnownTag(QDomElement const&, bool) const
-libKF6Bookmarks.so.6:KBookmarkGroup::isToolbarGroup() const
-libKF6Bookmarks.so.6:KBookmarkGroup::next(KBookmark const&) const
-libKF6Bookmarks.so.6:KBookmarkGroup::first() const
-libKF6Bookmarks.so.6:KBookmarkGroup::isOpen() const
-libKF6Bookmarks.so.6:KBookmarkGroup::indexOf(KBookmark const&) const
-libKF6Bookmarks.so.6:KBookmarkGroup::previous(KBookmark const&) const
-libKF6Bookmarks.so.6:KBookmarkOwner::enableOption(KBookmarkOwner::BookmarkOption) const
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::url() const
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::icon() const
-libKF6Bookmarks.so.6:KBookmarkOwner::FutureBookmark::title() const
-libKF6Bookmarks.so.6:KBookmarkAction::metaObject() const
-libKF6Bookmarks.so.6:KBookmarkManager::metaObject() const
-libKF6Bookmarks.so.6:KBookmarkManager::internalDocument() const
-libKF6Bookmarks.so.6:KBookmarkManager::path() const
-libKF6Bookmarks.so.6:KBookmarkManager::root() const
-libKF6Bookmarks.so.6:KBookmarkManager::save(bool) const
-libKF6Bookmarks.so.6:KBookmarkManager::saveAs(QString const&, bool) const
-libKF6Bookmarks.so.6:KBookmarkActionInterface::bookmark() const
-libKF6Bookmarks.so.6:KBookmark::description() const
-libKF6Bookmarks.so.6:KBookmark::isSeparator() const
-libKF6Bookmarks.so.6:KBookmark::parentGroup() const
-libKF6Bookmarks.so.6:KBookmark::metaDataItem(QString const&) const
-libKF6Bookmarks.so.6:KBookmark::showInToolbar() const
-libKF6Bookmarks.so.6:KBookmark::internalElement() const
-libKF6Bookmarks.so.6:KBookmark::populateMimeData(QMimeData*) const
-libKF6Bookmarks.so.6:KBookmark::positionInParent() const
-libKF6Bookmarks.so.6:KBookmark::url() const
-libKF6Bookmarks.so.6:KBookmark::List::populateMimeData(QMimeData*) const
-libKF6Bookmarks.so.6:KBookmark::icon() const
-libKF6Bookmarks.so.6:KBookmark::text() const
-libKF6Bookmarks.so.6:KBookmark::isNull() const
-libKF6Bookmarks.so.6:KBookmark::address() const
-libKF6Bookmarks.so.6:KBookmark::isGroup() const
-libKF6Bookmarks.so.6:KBookmark::toGroup() const
-libKF6Bookmarks.so.6:KBookmark::fullText() const
-libKF6Bookmarks.so.6:KBookmark::metaData(QString const&, bool) const
-libKF6Bookmarks.so.6:KBookmark::mimeType() const
-libKF6Bookmarks.so.6:KBookmark::hasParent() const
-libKF6Bookmarks.so.6:KBookmark::operator==(KBookmark const&) const
-libKF6Bookmarks.so.6:non-virtual thunk to KBookmarkAction::~KBookmarkAction()
-libKF6Bookmarks.so.6:non-virtual thunk to KBookmarkAction::~KBookmarkAction()
+libKF6Bookmarks.so.6:KEditBookmarks::setBrowserMode(bool)
+libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::~KBookmarkActionMenu()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addActions()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addBookmark()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addBookmarkActions()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addFolderActions()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addOpenFolderInTabs()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addProperties()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::setBrowserMode(bool)
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotCopyLocation()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotEditAt()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotInsert()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotOpenFolderInTabs()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotProperties()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotRemove()
+libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::~KBookmarkContextMenu()
+libKF6BookmarksWidgets.so.6:KBookmarkDialog::accept()
+libKF6BookmarksWidgets.so.6:KBookmarkDialog::newFolderButton()
+libKF6BookmarksWidgets.so.6:KBookmarkDialog::selectFolder(KBookmark)
+libKF6BookmarksWidgets.so.6:KBookmarkDialog::~KBookmarkDialog()
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::addActions()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::contextMenu(QAction*)
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::qt_metacall(QMetaObject::Call, int, void**)
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::qt_metacast(char const*)
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::addAddBookmark()
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::addAddBookmarksList()
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::addEditBookmarks()
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::addNewFolder()
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::addOpenInTabs()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::fillBookmarks()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotNewFolder()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::addAddBookmark()
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::clear()
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::contextMenu(QAction*)
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::ensureUpToDate()
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::fillBookmarks()
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::refill()
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::setBrowserMode(bool)
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotAboutToShow()
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotAddBookmark()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::addEditBookmarks()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::actionForBookmark(KBookmark const&)
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotEditBookmarks()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::addAddBookmarksList()
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotAddBookmarksList()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotBookmarksChanged(QString const&)
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotEditBookmarks()
+libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotNewFolder()
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::slotOpenFolderInTabs()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::clear()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::refill()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::KBookmarkMenu(KBookmarkManager*, KBookmarkOwner*, QMenu*)
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::KBookmarkMenu(KBookmarkManager*, KBookmarkOwner*, QMenu*, QString const&)
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::KBookmarkMenu(KBookmarkManager*, KBookmarkOwner*, QMenu*)
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::KBookmarkMenu(KBookmarkManager*, KBookmarkOwner*, QMenu*, QString const&)
 libKF6BookmarksWidgets.so.6:KBookmarkMenu::~KBookmarkMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::~KBookmarkMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::~KBookmarkMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::addBookmark(QString const&, QUrl const&, QString const&, KBookmark)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::qt_metacall(QMetaObject::Call, int, void**)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::qt_metacast(char const*)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::addBookmarks(QList<KBookmarkOwner::FutureBookmark> const&, QString const&, KBookmarkGroup)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::editBookmark(KBookmark const&)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::selectFolder(KBookmark)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::createNewFolder(QString const&, KBookmark)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::newFolderButton()
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::accept()
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::KBookmarkDialog(KBookmarkManager*, QWidget*)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::KBookmarkDialog(KBookmarkManager*, QWidget*)
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::~KBookmarkDialog()
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::~KBookmarkDialog()
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::~KBookmarkDialog()
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::qt_metacall(QMetaObject::Call, int, void**)
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::qt_metacast(char const*)
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::KBookmarkActionMenu(KBookmark const&, QObject*)
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::KBookmarkActionMenu(KBookmark const&, QString const&, QObject*)
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::KBookmarkActionMenu(KBookmark const&, QObject*)
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::KBookmarkActionMenu(KBookmark const&, QString const&, QObject*)
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::~KBookmarkActionMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::~KBookmarkActionMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::~KBookmarkActionMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addActions()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotEditAt()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotInsert()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotRemove()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addBookmark()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::qt_metacall(QMetaObject::Call, int, void**)
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::qt_metacast(char const*)
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addProperties()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::setBrowserMode(bool)
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotProperties()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addFolderActions()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotCopyLocation()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addBookmarkActions()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::addOpenFolderInTabs()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::slotOpenFolderInTabs()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::KBookmarkContextMenu(KBookmark const&, KBookmarkManager*, KBookmarkOwner*, QWidget*)
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::KBookmarkContextMenu(KBookmark const&, KBookmarkManager*, KBookmarkOwner*, QWidget*)
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::~KBookmarkContextMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::~KBookmarkContextMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::~KBookmarkContextMenu()
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::metaObject() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::parentMenu() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::browserMode() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::parentAddress() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::addBookmarkAction() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::editBookmarksAction() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::newBookmarkFolderAction() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::bookmarkTabsAsFolderAction() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::owner() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::isRoot() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::isDirty() const
-libKF6BookmarksWidgets.so.6:KBookmarkMenu::manager() const
-libKF6BookmarksWidgets.so.6:KBookmarkDialog::metaObject() const
-libKF6BookmarksWidgets.so.6:KBookmarkActionMenu::metaObject() const
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::metaObject() const
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::browserMode() const
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::owner() const
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::manager() const
-libKF6BookmarksWidgets.so.6:KBookmarkContextMenu::bookmark() const
-libKF6BookmarksWidgets.so.6:non-virtual thunk to KBookmarkDialog::~KBookmarkDialog()
-libKF6BookmarksWidgets.so.6:non-virtual thunk to KBookmarkDialog::~KBookmarkDialog()
-libKF6BookmarksWidgets.so.6:non-virtual thunk to KBookmarkContextMenu::~KBookmarkContextMenu()
-libKF6BookmarksWidgets.so.6:non-virtual thunk to KBookmarkContextMenu::~KBookmarkContextMenu()
-libKF6BookmarksWidgets.so.6:non-virtual thunk to KBookmarkActionMenu::~KBookmarkActionMenu()
-libKF6BookmarksWidgets.so.6:non-virtual thunk to KBookmarkActionMenu::~KBookmarkActionMenu()
