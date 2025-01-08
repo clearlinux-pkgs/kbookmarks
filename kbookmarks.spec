@@ -9,7 +9,7 @@
 #
 Name     : kbookmarks
 Version  : 6.9.0
-Release  : 91
+Release  : 92
 URL      : https://download.kde.org/stable/frameworks/6.9/kbookmarks-6.9.0.tar.xz
 Source0  : https://download.kde.org/stable/frameworks/6.9/kbookmarks-6.9.0.tar.xz
 Source1  : https://download.kde.org/stable/frameworks/6.9/kbookmarks-6.9.0.tar.xz.sig
